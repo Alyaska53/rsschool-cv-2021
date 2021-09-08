@@ -32,3 +32,36 @@ I really want to become a good _front-end developer_ and I'm going to my goal!
 * Autodesk Revit
 
 ***
+
+### Code example:
+
+**KATA from CODEWARS**: _Write a function that takes a string of parentheses, and determines if the order of the parentheses is valid._  
+_The function should return_ `true` _if the string is valid, and_ `false` _if it's invalid._
+
+```
+function validParentheses(parens) {
+  if (parens.length > 100) {
+    return false;
+  }
+      
+  const brackets = parens.split('')
+                         .filter(el => (el === ')') || (el === '('));  
+  const stack = [];
+  
+  brackets.forEach(function(element) {
+    if (element === '(') || 
+        stack.length === 0 ||
+        stack[stack.length - 1] === ')') {
+      
+      stack.push(element);
+      return;
+    } 
+    
+    stack.pop();
+    return;
+  });
+  
+  return stack.length === 0;
+}
+```
+***
