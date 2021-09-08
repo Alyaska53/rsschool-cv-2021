@@ -20,3 +20,15 @@ I enjoy learning and solving various problems in this direction.
 I really want to become a good _front-end developer_ and I'm going to my goal!
 
 ***
+
+### Skills and Proficiency:
+
+* HTML5, CSS3  
+* JavaScript Basics  
+* Git, GitHub  
+* VS Code
+* Figma  
+* Autodesk AutoCAD
+* Autodesk Revit
+
+***
