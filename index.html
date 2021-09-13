@@ -134,7 +134,46 @@
           <p class="future-projects">New projects will be implemented in the near future...</p>
         </section>
         
+        <div class="second-color">
+          <section class="code-example" id="code-example">
+            <h3>code example</h3>
+            <p>
+              KATA from CODEWARS: write a function that takes a string of parentheses, and determines if the order of the parentheses is valid.
+              The function should return true if the string is valid, and false if it’s invalid.
+            </p>
+            <pre>
+              <code class="code-from-codewars">
+  function validParentheses(parens) {
+    if (parens.length > 100) {
+      return false;
+    }
+        
+    const brackets = parens.split('')
+                           .filter(el => (el === ')') || (el === '('));  
+    const stack = [];
+              
+    brackets.forEach(function(element) {
+      if (element === '(' || 
+          stack.length === 0 ||
+          stack[stack.length - 1] === ')') {
+            
+        stack.push(element);
+        return;
+      } 
+                
+      stack.pop();
+      return;
+    });
+                  
+    return stack.length === 0;
+  }
+              </code>
+            </pre>
+          </section>
+        </div>
       </main>
+
+      
     </div>
   </body>
 </html>

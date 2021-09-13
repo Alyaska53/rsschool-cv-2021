@@ -272,3 +272,20 @@ aside {
   padding-left: 10px;
   line-height: 1.5;
 }
+
+.code-example {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.code-example p {
+  line-height: 1.5;
+}
+
+.code-example pre {
+  margin-bottom: 0;
+}
+
+.code-example code {
+  font-size: 17px;
+}
