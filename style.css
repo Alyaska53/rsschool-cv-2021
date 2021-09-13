@@ -77,6 +77,8 @@ a:hover {
   text-transform: uppercase;
 }
 
+/* main styles */
+
 .main {
 	background-color: #ece8e6;
 }
@@ -87,7 +89,7 @@ blockquote {
   color: #3a3a3a;
   padding: 30px 30px 30px 90px;
   position: relative;
-  }
+}
 
 blockquote:before {
   content: '\201C';
@@ -103,7 +105,7 @@ blockquote:before {
   font-weight: 500;
   text-align: center;
   line-height: 50px;
-  }
+}
 
 blockquote:after {
   content: '';
@@ -113,7 +115,7 @@ blockquote:after {
   left: 70px;
   top: 20px;
   bottom: 20px;
-  }
+}
 
 blockquote p {
   margin-top: 0;
@@ -164,4 +166,60 @@ h3 {
   display: inline;
   margin-right: 15px;
   vertical-align: middle;
+}
+
+.second-color {
+  background-color: #eeeeee;
+}
+
+.about-myself {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 15px;
+}
+
+.about-myself p {
+  margin: 16px auto 0;
+  line-height: 1.5;
+}
+
+aside {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills ul {
+  padding-left: 0;
+  margin-left: 19px;
+}
+
+.skills li {
+  margin: 10px auto 0;
+}
+
+.language ul {
+  padding-left: 0;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  list-style: none; 
+}
+
+.language li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.language li img {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.language li p {
+  margin: 0 15px 0 0;
 }
