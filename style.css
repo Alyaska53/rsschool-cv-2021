@@ -76,3 +76,52 @@ a:hover {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.main {
+	background-color: #ece8e6;
+}
+
+blockquote {
+  margin: 0;
+  background: #eeeeee;
+  color: #3a3a3a;
+  padding: 30px 30px 30px 90px;
+  position: relative;
+  }
+
+blockquote:before {
+  content: '\201C';
+  position: absolute;
+  top: 20px;
+  left: 16px;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #3a3a3a;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50px;
+  }
+
+blockquote:after {
+  content: '';
+  width: 3px;
+  background: #3a3a3a;
+  position:absolute;
+  left: 70px;
+  top: 20px;
+  bottom: 20px;
+  }
+
+blockquote p {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+blockquote cite {
+  font-style: normal;
+  text-transform: uppercase;
+}
