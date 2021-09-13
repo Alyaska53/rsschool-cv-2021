@@ -223,3 +223,52 @@ aside {
 .language li p {
   margin: 0 15px 0 0;
 }
+
+.courses {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+.courses ul {
+  padding-left: 0;
+  margin-left: 19px;
+}
+
+.courses li {
+  margin: 10px auto 0;
+}
+
+.projects {
+  width: 90%;
+  margin: auto;
+}
+
+.future-projects {
+  margin: 16px auto;
+  text-align: center;
+}
+
+.clock-link { 
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee;
+  border: 0.5px solid #ece8e6;
+}
+
+.clock-link:hover {
+  border: 0.5px solid #ece8e6;
+  box-shadow: 0 0 15px #ff0000d5;
+}
+
+.clock-link h4 {
+  padding-left: 10px;
+}
+
+.clock-link p {
+  padding-right: 10px;
+  padding-left: 10px;
+  line-height: 1.5;
+}
