@@ -125,3 +125,43 @@ blockquote cite {
   font-style: normal;
   text-transform: uppercase;
 }
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto 15px;
+  padding: 15px 20px 7px;
+  border-bottom: 3px solid #3a3a3a;
+}
+
+.contacts {
+  width: 90%;
+  margin: auto;
+}
+
+.contacts ul {
+  padding-left: 0;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.contacts li {
+  display: inline;
+  margin-bottom: 10px;
+}
+
+.contacts li img {
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.contacts li p {
+  display: inline;
+  margin-right: 15px;
+  vertical-align: middle;
+}
