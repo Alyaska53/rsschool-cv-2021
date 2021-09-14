@@ -337,16 +337,16 @@ aside {
 }
 
 @media (min-width: 576px) {
-	.container {
-	  margin-bottom: 15px;
-	  margin-right: auto;
-	  margin-left: auto;
-	  max-width: 540px;
-	  padding: 0;
-	  -webkit-box-shadow: -5px 5px 20px 5px rgba(34, 60, 80, 0.3);
-	  -moz-box-shadow: -5px 5px 20px 5px rgba(34, 60, 80, 0.3);
-	  box-shadow: -5px 5px 20px 5px rgba(34, 60, 80, 0.3);
-	}
+  .container {
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 540px;
+    padding: 0;
+    -webkit-box-shadow: -5px 5px 20px 5px rgba(34, 60, 80, 0.3);
+    -moz-box-shadow: -5px 5px 20px 5px rgba(34, 60, 80, 0.3);
+    box-shadow: -5px 5px 20px 5px rgba(34, 60, 80, 0.3);
+  }
 
   .photo {
     width: 80%;
