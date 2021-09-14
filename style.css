@@ -15,7 +15,7 @@ a {
   
 a:hover {
   color: #ff0000;
-  }
+}
 
 .cv {
   margin: 0;
@@ -32,7 +32,7 @@ a:hover {
 }
 
 .photo {
-  width: 80%;
+  width: 60%;
   max-width: 360px;
 	border-radius: 50%;
 }
@@ -273,6 +273,10 @@ aside {
   line-height: 1.5;
 }
 
+.clock-link img {
+  width: 100%;
+}
+
 .code-example {
   width: 90%;
   margin: 0 auto;
@@ -318,9 +322,13 @@ aside {
   display: contents;
 }
 
-@media (min-height: 750px) {
+@media (min-height: 800px) {
   .header {
     justify-content: center;
+  }
+
+  .photo {
+    width: 80%;
   }
 
   .menu {
@@ -339,6 +347,10 @@ aside {
 		-moz-box-shadow: -5px 5px 20px 5px rgba(34, 60, 80, 0.3);
 		box-shadow: -5px 5px 20px 5px rgba(34, 60, 80, 0.3);
 	}
+
+  .photo {
+    width: 80%;
+  }
 
   aside {
     flex-direction: row;
