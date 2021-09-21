@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dmitry Buravkin CV</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/default.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
+  </head>
+
+  <body class="cv">
+    <div class="container">
+      <header class="header">
+        <article class="page-title">
+          <h1>Dmitry Buravkin</h1>
+        
+          <img class="photo" src="images/avatar.jpg" alt="Avatar">
+            
+          <h2>Junior Front-end Developer</h2>
+        </article>
+
+        <nav class="menu">
+          <a class="menu-link" href="#contacts">contacts</a>
+          <a class="menu-link" href="#about-myself">about myself</a>
+          <a class="menu-link" href="#skills">skills</a>
+          <a class="menu-link" href="#languages">languages</a>
+          <a class="menu-link" href="#courses">courses</a>
+          <a class="menu-link" href="#projects">projects</a>
+          <a class="menu-link" href="#code-example">code example</a>
+        </nav>
+      </header>
+
+      <main class="main">
+        <blockquote>
+          <p>Success does not consist in never making mistakes but in never making the same one a second time.</p>
+          <footer>— <cite>George Bernard Shaw</cite></footer>
+        </blockquote>
+
+        <section class="contacts" id="contacts">
+          <h3>contacts</h3>
+          <ul>
+            <li>
+              <img src="images/phone.svg" alt="Phone">
+              <p>+375 (29) 8930685</p>
+            </li>
+            <li>
+              <img src="images/email.svg" alt="Email">
+              <p>dmitry.buravkin@gmail.com</p>
+            </li>
+            <li>
+              <img src="images/telegram.svg" alt="Telegram">
+              <p>@DmitryBuravkin</p>
+            </li>
+            <li>
+              <img src="images/linkedin.svg" alt="Phone">
+              <a class="linked-in" href="https://www.linkedin.com/in/dmitry-buravkin-6168b9219/">LinkedIn</a>
+            </li>
+          </ul>
+        </section>
+
+        <div class="second-color">
+          <section class="about-myself" id="about-myself">
+            <h3>about myself</h3>
+            <p>In 2020, I graduated from the <em>Belarusian National Technical University</em> with a degree in Power Engineering.
+              Today I work as an electrical design engineer.</p>
+            <p>Recently, I realized that the chosen profession does not suit me. So I decided to try my hand at web development.
+              I like to study and solve various problems in this direction.</p>
+            <p>I really want to be a good front-end developer, and I'm going to my goal!</p>
+          </section>
+        </div>
+
+        <aside>
+            <section class="skills" id="skills">
+              <h3>skills</h3>
+              <ul>
+                <li>HTML5, CSS3</li>
+                <li>JavaScript Basics</li>
+                <li>Git, GitHub</li>
+                <li>Figma</li>
+                <li>VS Code</li>
+              </ul>
+            </section>
+            
+            <section class="language" id="languages">
+              <h3>languages</h3>
+              <ul>
+                <li>
+                  <img src="images/uk.png" alt="United Kingdom">
+                  <p>ENGLISH<br>Pre-Intermediate</p>
+                </li>
+                <li>
+                  <img src="images/russia.png" alt="Russia">
+                  <p>RUSSIAN<br>Native</p>
+                </li>
+                <li>
+                  <img src="images/belarus.png" alt="Belarus">
+                  <p>BELARUSIAN<br>Native</p>
+                </li>
+              </ul>
+            </section>
+        </aside>
+
+        <div class="second-color">
+          <section class="courses" id="courses">
+            <h3>courses</h3>
+            <ul>
+              <li>HTML and CCS Tutorials on the <a href="https://ru.code-basics.com/">Code-Basics</a> (completed)</li>
+              <li>JavaScript Manual on <a href="https://learn.javascript.ru/">learn.javascript.ru</a> (in progress)</li>
+              <li>RS School Course “JS / FRONT-END” (in progress)</li>
+              <li>Training on algorithms from Yandex (in progress)</li>
+            </ul>
+          </section>
+        </div>
+        
+        <section class="projects" id="projects">
+          <h3>projects</h3>
+          <div>
+            <a href="https://alyaska53.github.io/my-clock/">
+              <div class="clock-link">
+                <div>
+                  <h4>JS CLOCK</h4>
+                  <p>A page with a clock and the ability to change the theme color</p>
+                  <p>A task from <em>RS School</em> course</p>
+                </div>
+                <img src="images/clock.png" alt="Clock">
+              </div>
+            </a>
+          </div>
+          <p class="future-projects">New projects will be implemented in the near future...</p>
+        </section>
+        
+        <div class="second-color">
+          <section class="code-example" id="code-example">
+            <h3>code example</h3>
+            <p>
+              KATA from CODEWARS: write a function that takes a string of parentheses, and determines if the order of the parentheses is valid.
+              The function should return true if the string is valid, and false if it’s invalid.
+            </p>
+            <pre>
+              <code class="code-from-codewars">
+  function validParentheses(parens) {
+    if (parens.length > 100) {
+      return false;
+    }
+        
+    const brackets = parens.split('')
+                           .filter(el => (el === ')') || (el === '('));  
+    const stack = [];
+              
+    brackets.forEach(function(element) {
+      if (element === '(' || 
+          stack.length === 0 ||
+          stack[stack.length - 1] === ')') {
+            
+        stack.push(element);
+        return;
+      } 
+                
+      stack.pop();
+    });
+                  
+    return stack.length === 0;
+  }
+              </code>
+            </pre>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-link">
+          <a href="https://github.com/Alyaska53">
+            <img src="images/github.svg" alt="GitHub">
+          </a>
+          <a href="https://rs.school/js/">
+            <img src="images/rs_school_js.svg" alt="Rolling Scopes School">
+          </a>
+        </div>
+        
+        <h5>© 2021 by Dmitry Buravkin</h5>
+      </footer>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad();
+      
+      console.log('Самооценка 150 баллов');
+      console.log('Комментарии по выполнению ТЗ');
+      console.log(' - [+] Верстка валидная 10/10');
+      console.log(' - [+] Верстка семантическая (присутствуют теги header, main, footer, nav, article, section, aside,');
+      console.log('       заголовки h1, h2, h3, h4, h5) 20/20');
+      console.log(' - [+] Используются CSS стили 10/10');
+      console.log(' - [+] Контент размещается в блоке, который центрируется на странице 10/10');
+      console.log(' - [+] Верстка адаптивная, все содержание сохраняется 10/10');
+      console.log(' - [+] Есть адаптивное меню, плавная прокрутка по странице 10/10');
+      console.log(' - [+] Есть фото, пропорции не искажаются 10/10');
+      console.log(' - [+] Контакты для связи и перечень навыков оформлены в виде списка 10/10');
+      console.log(' - [+] CV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского 10/10');
+      console.log(' - [+] CV содержит пример кода с подсветкой 10/10');
+      console.log(' - [+] CV содержит ссылки-изображения на выполненые проекты 10/10');
+      console.log(' - [+] CV выполнено на английском языке 10/10');
+      console.log(' - [+] Выполнены ребования к PR и коммтам, выполнена самооценка 10/10');
+      console.log(' - [-] Есть видеорезюме на английском языке 0/10');
+      console.log(' - [+] Дизайн и формление не ниже, чем в примерах 10/10');
+    </script>
+  </body>
+</html>
