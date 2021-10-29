@@ -11,6 +11,7 @@ html {
 a {
   color: #3a3a3a;
   text-decoration: none;
+  transition: all 0.3s ease-in;
 }  
   
 a:hover {
@@ -244,6 +245,12 @@ aside {
   margin: auto;
 }
 
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
 .future-projects {
   margin: 16px auto;
   text-align: center;
@@ -255,11 +262,10 @@ aside {
   display: flex;
   flex-direction: column;
   background-color: #eeeeee;
-  border: 0.5px solid #ece8e6;
+  transition: all 0.3s ease-in;
 }
 
-.clock-link:hover {
-  border: 0.5px solid #ece8e6;
+.link-container:hover .clock-link {
   box-shadow: 0 0 15px #ff0000d5;
 }
 
@@ -403,7 +409,8 @@ aside {
 
 @media (min-width: 992px) {
   .container{
-    max-width: 960px;
+    max-width: 1080px;
+    width: 1080px;
   }
   
   .menu {
