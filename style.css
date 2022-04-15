@@ -1,0 +1,432 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #3a3a3a;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}  
+  
+a:hover {
+  color: #ff0000;
+}
+
+.cv {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #3a3a3a;
+}
+
+/* header styles */
+
+.page-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo {
+  width: 60%;
+  max-width: 360px;
+  border-radius: 50%;
+}
+
+.header {
+  height: 100vh;
+  background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header h1 {
+  margin-top: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header h2 {
+  text-align: center;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.menu {
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-link {
+  color: #3a3a3a;
+  font-size: 16px;
+
+  margin-top: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* main styles */
+
+.main {
+  background-color: #ece8e6;
+}
+
+blockquote {
+  margin: 0;
+  background: #eeeeee;
+  color: #3a3a3a;
+  padding: 30px 30px 30px 90px;
+  position: relative;
+}
+
+blockquote:before {
+  content: '\201C';
+  position: absolute;
+  top: 20px;
+  left: 16px;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #3a3a3a;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50px;
+}
+
+blockquote:after {
+  content: '';
+  width: 3px;
+  background: #3a3a3a;
+  position:absolute;
+  left: 70px;
+  top: 20px;
+  bottom: 20px;
+}
+
+blockquote p {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+blockquote cite {
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto 15px;
+  padding: 15px 20px 7px;
+  border-bottom: 3px solid #3a3a3a;
+}
+
+.contacts {
+  width: 90%;
+  margin: auto;
+}
+
+.contacts ul {
+  padding-left: 0;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.contacts li {
+  display: inline;
+  margin-bottom: 10px;
+}
+
+.contacts li img {
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.contacts li p {
+  display: inline;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.second-color {
+  background-color: #eeeeee;
+}
+
+.about-myself {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 15px;
+}
+
+.about-myself p {
+  margin: 16px auto 0;
+  line-height: 1.5;
+}
+
+aside {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills ul {
+  padding-left: 0;
+  margin-left: 19px;
+}
+
+.skills li {
+  margin: 10px auto 0;
+}
+
+.language ul {
+  padding-left: 0;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  list-style: none; 
+}
+
+.language li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.language li img {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.language li p {
+  margin: 0 15px 0 0;
+}
+
+.courses {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+.courses ul {
+  padding-left: 0;
+  margin-left: 19px;
+}
+
+.courses li {
+  margin: 10px auto 0;
+}
+
+.projects {
+  width: 90%;
+  margin: auto;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.future-projects {
+  margin: 16px auto;
+  text-align: center;
+}
+
+.clock-link { 
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee;
+  transition: all 0.3s ease-in;
+}
+
+.link-container:hover .clock-link {
+  box-shadow: 0 0 15px #ff0000d5;
+}
+
+.clock-link h4 {
+  padding-left: 10px;
+}
+
+.clock-link p {
+  padding-right: 10px;
+  padding-left: 10px;
+  line-height: 1.5;
+}
+
+.clock-link img {
+  width: 100%;
+}
+
+.code-example {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.code-example p {
+  line-height: 1.5;
+}
+
+.code-example pre {
+  margin-bottom: 0;
+}
+
+.code-example code {
+  font-size: 17px;
+}
+
+/* footer styes */
+
+.footer {
+  background: #3a3a3a;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer h5 {
+  margin: 10px auto;
+  font-size: 12px;
+  color:#eeeeee;
+}
+
+.footer a {
+  margin: 5px;
+}
+
+.footer img {
+  height: 32px;
+}
+
+.footer-link {
+  display: contents;
+}
+
+@media (min-height: 800px) {
+  .header {
+    justify-content: center;
+  }
+
+  .photo {
+    width: 80%;
+  }
+
+  .menu {
+    position: absolute;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 540px;
+    padding: 0;
+    -webkit-box-shadow: -5px 5px 20px 5px rgba(34, 60, 80, 0.3);
+    -moz-box-shadow: -5px 5px 20px 5px rgba(34, 60, 80, 0.3);
+    box-shadow: -5px 5px 20px 5px rgba(34, 60, 80, 0.3);
+  }
+
+  .photo {
+    width: 80%;
+  }
+
+  aside {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .skills {
+    width: 45%;
+  }
+
+  .language {
+    width: 45%;
+  }
+
+  .language ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .clock-link {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .clock-link img {
+    width: 33%;
+  }
+
+  .footer {
+    flex-direction: row;
+  }
+
+  .footer h5 {
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container{
+    max-width: 720px;
+  }  
+
+  .contacts ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .container{
+    max-width: 1080px;
+    width: 1080px;
+  }
+  
+  .menu {
+    flex-direction: row;
+  }
+
+  .menu-link {
+    margin: auto 15px;
+  }
+
+  h3 {
+    text-align: left;
+  }
+
+  .clock-link {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
